@@ -23,7 +23,7 @@ import CPSC_utils as utils
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = '2'
 warnings.filterwarnings("ignore")
 config = Config()
-# config.MODEL_PATH = 'E:/CPSC_Scheme/Net_models/'
+config.MODEL_PATH = 'E:/CPSC_Scheme/Net_models/'
 
 records_name = np.array(os.listdir(config.DATA_PATH))
 records_label = np.load(config.REVISED_LABEL) - 1
